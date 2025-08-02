@@ -3,6 +3,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { FloatingNavDemo } from "./components/Navbar/Navbar";
 import { cn } from "@/lib/utils";
+import CustomCursor from "./components/Custom/CustomCursor";
+import ScrollToggleButton from "./components/Custom/ScrollButton";
+
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,7 +32,8 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      > <div className="relative flex min-h-screen w-full items-center justify-center bg-white dark:bg-black">
+      >
+       <div className="relative flex min-h-screen w-full items-center justify-center bg-white dark:bg-black">
             <div
               className={cn(
                 "absolute inset-0",
@@ -40,7 +45,9 @@ export default function RootLayout({
             {/* Radial gradient for the container to give a faded look */}
             <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
             <div className="relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text py-8  text-transparent ">
+              <CustomCursor/>
               <FloatingNavDemo/>
+              <ScrollToggleButton/>
         {children}
             </div>
           </div>
