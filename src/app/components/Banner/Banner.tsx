@@ -9,7 +9,8 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const Banner = () => {
   
     return (
-         <BackgroundLines className="flex items-center justify-center w-full flex-col px-4">
+      <div id="banner">
+           <BackgroundLines  className="flex items-center justify-center w-full flex-col px-4">
          <div className="relative z-50 mt-10 items-center px-4 py-10">
             <div className= "w-14 h-14 md:w-32 md:h-32 border-4 border-red-700 rounded-full p-2 ">
              <Image src='/blackipc.jpg' alt="picture" width={500} height={100} className=" w-full h-full rounded-full "/>
@@ -20,7 +21,7 @@ const Banner = () => {
        <span className="text-red-700"> Kayes Mahmud.</span>
       </h2>
        <p className="max-w-xl mx-auto text-sm md:text-2xl text-neutral-700 dark:text-white text-left mt-6">
-        I'm a
+        I’m a
             <Typewriter
             words={[" Web Developer", " Frontend Developer"," Backend Developer", " Junior Full Stack Developer"]}
             loop={Infinity}
@@ -58,6 +59,7 @@ const Banner = () => {
          </div>
        
     </BackgroundLines>
+      </div>
     );
 };
 
