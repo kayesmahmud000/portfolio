@@ -1,5 +1,5 @@
-export const MY_STACK = {
-    frontend: [
+export const MY_STACK = 
+     [
         {
             name: 'JavaScript',
             icon: '/logo/js.png',
@@ -67,7 +67,15 @@ export const MY_STACK = {
       {
         name:'vsCode',
         icon:'/logo/vscode.webp'
+      },
+      {
+        name:'AOS',
+        icon:'/logo/aoswebp.webp'
+      },
+      {
+        name:'Figma',
+        icon:'/logo/figma.png'
       }
-    ],
+    ]
    
-};
+;

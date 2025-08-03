@@ -3,7 +3,10 @@ import { Spotlight } from "../ui/Spotlight";
 
 const Headers = ({ title }: { title: string }) => {
   return (
-    <div className="relative flex  w-full overflow-hidden rounded-md antialiased">
+    <div className="relative flex  w-full overflow-hidden rounded-md antialiased" data-aos="fade-right"
+     data-aos-offset="300"
+      data-aos-duration="6000"
+     data-aos-easing="ease-in-sine">
        <Spotlight
         className=" left-1/3 "
         fill="red"

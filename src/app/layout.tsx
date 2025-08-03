@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import CustomCursor from "./components/Custom/CustomCursor";
 import ScrollToggleButton from "./components/Custom/ScrollButton";
 import ScrollProgressIndicator from "./components/Custom/TracingBeam";
+import AOSInitializer from "./components/Custom/AOSInitializer";
 
 
 
@@ -50,6 +51,8 @@ export default function RootLayout({
               <FloatingNavDemo/>
             <ScrollProgressIndicator/>
               <ScrollToggleButton/>
+              <AOSInitializer/>
+              
         {children}
             </div>
           </div>

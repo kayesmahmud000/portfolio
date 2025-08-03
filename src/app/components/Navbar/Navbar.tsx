@@ -8,7 +8,7 @@ import {
   IconSettingsBolt,
 } from "@tabler/icons-react";
 import useIsMobile from "@/hook/useIsMobile";
-import { Drawer, DrawerClose, DrawerContent, DrawerTrigger } from "../ui/drawer";
+import { Drawer, DrawerClose, DrawerContent, DrawerTitle, DrawerTrigger } from "../ui/drawer";
 import { Button } from "../ui/button";
 import { RxCross2 } from "react-icons/rx";
 import { IoMenuSharp } from "react-icons/io5";
@@ -26,8 +26,8 @@ export function FloatingNavDemo() {
       icon: <IconSettingsBolt className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
-      name: "Project",
-      link: "/project",
+      name: "Projects",
+      link: "#projects",
       icon: <IconBriefcaseFilled className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
@@ -51,7 +51,7 @@ export function FloatingNavDemo() {
 
           <DrawerContent className="bg-black text-white">
             <div className="flex justify-between items-center p-4 border-b border-white">
-              <h2 className="text-lg font-semibold">Menu</h2>
+               <DrawerTitle className="text-lg font-semibold">Menu</DrawerTitle>
               <DrawerClose asChild>
                 <Button variant="ghost" size="icon" className="text-white">
                   <RxCross2 size={20} />

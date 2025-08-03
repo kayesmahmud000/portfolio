@@ -9,7 +9,10 @@ const About = () => {
       <div className="lg:flex-1/3 flex items-center justify-center">
           <Headers title={'About Me'}/>
       </div>
-         <div className="lg:flex-2/3 z-10 mt-5 border-l border-red-700 ">
+         <div className="lg:flex-2/3 z-10 mt-5 border-l border-red-700 " data-aos="fade-left"
+     data-aos-offset="300"
+      data-aos-duration="6000"
+     data-aos-easing="ease-in-sine">
               <p className="text-neutral-300 pl-2"> I’m a passionate and dedicated  Web Developer with a strong focus on creating modern, responsive, and user-friendly web applications.
 
 I specialize in JavaScript, React, Next.js, TypeScript, and Tailwind CSS, and I’m also experienced in working with MongoDB and MySQL for backend data management. With these technologies, I build scalable and high-performing digital solutions that align with both user needs and business goals.
